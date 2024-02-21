@@ -62,7 +62,7 @@ p.precio-1{
 
 .col-interna{
     display: flex;
-    
+
 }
 
 .titulo-producto-interna{
@@ -83,6 +83,11 @@ p.precio-1{
     justify-content: space-evenly;
     padding-top: 50px;
 }
+.contenido-huawei{
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 50px;
+}
 
 .boton-iphone{
     font-size: 15px;
@@ -93,7 +98,15 @@ p.precio-1{
     color: white;
     font-weight: bolder;
 }
-
+.boton-huawei{
+  font-size: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  width: 15rem;
+  background-color: black;
+  color: white;
+  font-weight: bolder;
+}
 .precio-1-iphone{
     text-decoration:line-through;
     text-align: center;
@@ -101,11 +114,23 @@ p.precio-1{
     font-weight: bold;
     margin: 0;
 }
+.precio-1-huawei{
+  text-decoration:line-through;
+  text-align: center;
+  color: red;
+  font-weight: bold;
+  margin: 0;
+}
 
 .precio-2-iphone{
     text-align: center;
     font-weight: bold;
 }
+.precio-2-huawei{
+  text-align: center;
+  font-weight: bold;
+}
+
 
 .col-interna-2{
     margin: 100px;
@@ -115,3 +140,6 @@ p.precio-1{
 .espec-iphone::after{
 content: '___________________________________________________________';
 }
+.espec-huawei::after{
+  content: '___________________________________________________________';
+  }
