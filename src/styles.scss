@@ -26,6 +26,7 @@ td.titulo-espc{
 .precio-2{
     text-align: left;
     font-weight: bold;
+
 }
 
 p.precio-1{
@@ -143,3 +144,14 @@ content: '___________________________________________________________';
 .espec-huawei::after{
   content: '___________________________________________________________';
   }
+
+.boton-principales{
+    padding: 7px;
+    width: 15rem;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 10px;
+}
