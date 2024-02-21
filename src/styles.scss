@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 td{
     padding: 20px;
 }
@@ -6,31 +7,14 @@ td.titulo-espc{
 }
 
 .titulo-producto{
+=======
+.texto{
+>>>>>>> parent of 9769a4d (se añadieron los títulosm, imáganes y contenido de los teléfonos)
     font-size: 20px;
     font-weight: bolder;
-    text-align: left;
-}
-
-.texto{
-    text-align: left;
 }
 
 
-.precio-1{
-    text-decoration:line-through;
-    text-align: left;
-    color: red;
-    font-weight: bold;
-}
-
-.precio-2{
-    text-align: left;
-    font-weight: bold;
-}
-
-p.precio-1{
-    margin: 0;
-}
 
 @media (min-width: 992px){
     .menu{
