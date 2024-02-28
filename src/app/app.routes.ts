@@ -4,17 +4,28 @@ import path from 'path';
 import { Component } from '@angular/core';
 import { HomeComponent } from './home/home.component';
 import { RealmeComponent } from './realme/realme.component';
+import { SamsungComponent } from './samsung/samsung.component';
+import { MotorolaComponent } from './motorola/motorola.component';
+import { OppoComponent } from './oppo/oppo.component';
 
 export const routes: Routes = [
     {
         path: '', component: HomeComponent,
     },
-
     {
         path: 'iphone', component: IphoneComponent,
     },
     {
         path: 'realme', component: RealmeComponent,
+    },
+    {
+        path: 'samsung', component: SamsungComponent,
+    },
+    {
+        path: 'motorola', component: MotorolaComponent,
+    },
+    {
+        path: 'oppo', component: OppoComponent,
     }
     
 ];
