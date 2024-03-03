@@ -1,0 +1,90 @@
+td, th{ 
+    border-left: solid;
+    border-right: solid;
+    border-bottom: solid;
+}
+
+button{
+    border-radius: 20px;
+    margin: 5px 2rem;
+    padding: 0 2rem;
+
+}
+
+input{
+    margin: 10px 2rem;
+}
+
+.thead{
+    background-color:cornflowerblue;
+    border:  solid;
+    border-top-left-radius: 80px 80px;
+}
+
+.table-crud{
+    width: 60%;
+    margin: 4rem auto;
+
+}
+
+.crud-div{
+    text-align: center;
+    display: flex;
+    height: 40px;
+}
+
+
+
+.boton-crear{
+    background-color: rgb(59, 179, 59);
+    color: white;
+    margin-top: 30px;
+}
+
+.boton-crear:hover{
+    background-color: rgb(36, 102, 10);
+    transition: all 0.5s ease-in-out;
+    color: rgb(255, 255, 255);
+}
+
+.boton-buscar{
+    margin: 3rem 0 0 14rem;
+    text-align: right;
+    background-color: gray;
+    color: white;
+}
+
+.boton-buscar:hover{
+    background-color: rgb(37, 37, 37);
+    transition: all 0.5s ease-in-out;
+    color: rgb(255, 255, 255);
+}
+
+.boton-editar{
+    background-color: yellow;
+    color: black;
+}
+
+.boton-editar:hover{
+    background-color: rgb(175, 175, 13);
+    transition: all 0.5s ease-in-out;
+    color: white;
+
+}
+
+.boton-borrar{
+    background-color: rgb(255, 0, 0);
+    color: white;
+}
+
+.boton-borrar:hover{
+    background-color: rgb(105, 1, 1);
+    transition: all 0.5s ease-in-out;
+    color: rgb(255, 255, 255);
+}
+
+.input-agregar{
+    display: flex;
+    flex-direction: column;
+    margin: 5rem;
+}
