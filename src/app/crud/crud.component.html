@@ -1,13 +1,13 @@
 
 <div class="crud-div">
-    
+
     <div class="input-agregar">
       <h5>Ingresa un nuevo producto</h5>
-        <input type="text" placeholder="ID"> 
+        <input type="text" placeholder="ID">
         <input type="text" placeholder="Nombre del producto">
         <input type="text" placeholder="Marca">
         <input type="text" placeholder="Almacen">
-        <button class="boton-crear">Crear</button>
+        <button class="boton-crear" (click)="nuevoElemento()">Crear</button>
     </div>
     <table class="table-crud">
         <thead class="thead">
@@ -25,14 +25,14 @@
             <td>Mark</td>
             <td>Otto</td>
             <td>mdo</td>
-            <td><button class="boton-editar" routerLink="/crud/editar">Editar</button> <button class="boton-borrar" >Eliminar</button></td>
+            <td><button class="boton-editar" routerLink="/crud/editar" (click)="elementoAEditar()">Editar</button> <button class="boton-borrar" >Eliminar</button></td>
           </tr>
           <tr>
             <th scope="row">2</th>
             <td>Jacob</td>
             <td>Thornton</td>
             <td>fat</td>
-            
+
             <td><button class="boton-editar" routerLink="/crud/editar">Editar</button> <button class="boton-borrar" >Eliminar</button></td>
           </tr>
           <tr>

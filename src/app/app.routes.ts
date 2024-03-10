@@ -7,10 +7,9 @@ import { SamsungComponent } from './samsung/samsung.component';
 import { MotorolaComponent } from './motorola/motorola.component';
 import { OppoComponent } from './oppo/oppo.component';
 import { CrudComponent } from './crud/crud.component';
-import { BuscarComponent } from './crud/buscar/buscar.component';
-import { EditarComponent } from './crud/editar/editar.component';
-import { CrearComponent } from './crud/crear/crear.component';
-import { EliminarComponent } from './crud/eliminar/eliminar.component';
+import { HttpClientModule } from '@angular/common/http';
+import { NgModule } from '@angular/core';
+
 
 export const routes: Routes = [
     {
@@ -35,29 +34,25 @@ export const routes: Routes = [
         path: 'oppo', component: OppoComponent,
     },
     {
-        path: 'crud', 
+        path: 'crud',
         component: CrudComponent,
-        children:[
-            {   path:'', 
-                redirectTo: '', 
-                pathMatch: 'full' 
-            },
-            {
-                path:'buscar',
-                component: BuscarComponent
-            },
-            {
-                path:'editar',
-                component: EditarComponent
-            },
-            {
-                path:'crear',
-                component: CrearComponent
-            },
-            {
-                path:'eliminar',
-                component: EliminarComponent
-            }
-        ]
     }
-];
+]
+
+
+@NgModule({
+  providers: [InMemoryDataService],
+  declarations: [
+  ],
+  imports: [
+    HttpClientModule,
+    HomeComponent,
+    IphoneComponent,
+    HuaweiComponent,
+    SamsungComponent,
+    MotorolaComponent,
+    OppoComponent
+  ],
+})
+
+export class AppRoutes { }
